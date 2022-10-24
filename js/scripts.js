@@ -63,8 +63,15 @@ class CopaDoMundo {
         }
     }
 
+    // Método para tirar os grupos da parte de sorteio para o chaveamento
     inserir(){
-            $("#chaveamentoGrupo1").html($('#grupo1'));
+
+        for(let index=0; index<8; index++){
+            let idGrupo = '#grupo' + (index+1);
+            let idGrupoChaveamento = '#chaveamentoGrupo' + (index+1);
+
+            $(idGrupoChaveamento).html($(idGrupo));
+        }
         
     }
 
