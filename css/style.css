@@ -85,3 +85,66 @@
 #centro1{
     margin-top: 180px;
 }
+
+
+/* CSS DO MODAL*/
+
+button{
+    padding: .6rem 1.2rem;
+    background-color: #888;
+    color: #fff;
+    border: none;
+    border-radius: .25rem;
+    cursor: pointer;
+    opacity: 0,9;
+    font-size: 1rem;
+    transition: 0.4s;
+
+}
+
+#openModal{
+    background-color: #007bff;
+
+}
+
+button:hover{
+    opacity: 1;
+}
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 5;
+
+}
+
+#Modal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    background-color: azure;
+    width: 500px;
+    max-width: 90%;
+    padding: 5px;
+}
+
+.modalHeader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+
+#Modal.hide, #fade.hide{
+    z-index: -20;
+    opacity: 0;
+
+}

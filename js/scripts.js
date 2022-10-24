@@ -18,6 +18,14 @@ class CopaDoMundo {
         $('#inserir').on('click', function(e){
             copaDoMundo.inserir();
         });
+
+        $('#openModal').on('click', function(e){
+            copaDoMundo.mostrarModal();
+        })
+
+        $('#closeModal').on('click', function(e){
+            copaDoMundo.fecharModal();
+        })
     }
 
 
@@ -73,6 +81,11 @@ class CopaDoMundo {
             $(idGrupoChaveamento).html($(idGrupo));
         }
         
+    }
+
+    mostrarModal(){
+        Modal.classList.toggle("hide");
+        fade.classList.toggle("hide");
     }
 
 }
