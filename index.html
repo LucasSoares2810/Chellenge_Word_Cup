@@ -225,7 +225,7 @@
 
             <input id="sorteio" type="button"  value="Click Me!">
             <input id="inserir" type="button"  value="inserir!">
-            <button id="openModal">Abrir</button>
+            
 
             <!-- FIM DO BOTÃO -->
 
@@ -236,22 +236,39 @@
               
 
                 <div class="coluna">
+                    
+                        <button id="openModal">
+
+                            <div class="lateral1" id="chaveamentoGrupo1">
+                            
+                            </div>
+
+                        </button>
                         
-                        <div class="lateral1" id="chaveamentoGrupo1">
-                            
-                        </div>
 
-                        <div class="lateral1" id="chaveamentoGrupo2">
-                            
-                        </div>
+                        <button id="openModal2">
 
-                        <div class="lateral1" id="chaveamentoGrupo3">
+                            <div class="lateral1" id="chaveamentoGrupo2">
                             
-                        </div>
+                            </div>
+                            
+                        </button>
 
-                        <div class="lateral1" id="chaveamentoGrupo4">
+                        <button id="openModal3">
+
+                            <div class="lateral1" id="chaveamentoGrupo3">
                             
-                        </div>                
+                            </div>
+                            
+                        </button>
+
+                        <button id="openModal4">
+
+                            <div class="lateral1" id="chaveamentoGrupo4">
+                            
+                            </div>
+                            
+                        </button>                
                     
                 </div>
 
@@ -329,21 +346,37 @@
 
                 <div class="coluna">
 
-                    <div class="lateral1" id="chaveamentoGrupo5">
-                            
-                    </div>
+                    <button id="openModal5">
 
-                    <div class="lateral1" id="chaveamentoGrupo6">
-                            
-                    </div>
+                        <div class="lateral1" id="chaveamentoGrupo5">
+                        
+                        </div>
+                        
+                    </button>
 
-                    <div class="lateral1" id="chaveamentoGrupo7">
-                            
-                    </div>
+                    <button id="openModal6">
 
-                    <div class="lateral1" id="chaveamentoGrupo8">
-                            
-                    </div>
+                        <div class="lateral1" id="chaveamentoGrupo6">
+                        
+                        </div>
+                        
+                    </button>
+
+                    <button id="openModal7">
+
+                        <div class="lateral1" id="chaveamentoGrupo7">
+                        
+                        </div>
+                        
+                    </button>
+
+                    <button id="openModal8">
+
+                        <div class="lateral1" id="chaveamentoGrupo8">
+                        
+                        </div>
+                        
+                    </button>
                     
                 </div>
                 
@@ -357,22 +390,64 @@
 
         <div id="fade" class="hide"></div>
         <div id="Modal" class="hide">
-            <h1>Modal</h1>
+            <h1>Simular Partida</h1>
             
             <div class="modalHeader">
-                <h2>este é o modal</h2>
-                <button id="closeModal">Fechar</button>
+                
+                
                 <div class="modaBody">
-                    <p>fazendo com que ele tenha uma aparência similar a de um texto legível. Muitos softwares de publicação e 
-                        editores de páginas na internet agora usam Lorem 
-                        Ipsum como texto-modelo padrão, e uma rápida busca por 'lorem ipsum' mostra vários websites ainda em 
-                        sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e
-                         às vezes de propósito (injetando humor, e coisas do gênero).</p>
+                    <div class="rodadaGrupo1">
+                        <span id="time1Rodada1"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                        <span id="time2Rodada1"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                    </div>
+
+                    <div class="rodada">
+                        <span id="time3Rodada1"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                        <span id="time4Rodada1"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                    </div>
+
+                    <div class="rodada">
+                        <span id="time1Rodada2"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                        <span id="time4Rodada2"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                    </div> 
+
+                    <div class="rodada">
+                        <span id="time2Rodada2"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                        <span id="time3Rodada2"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                    </div>
+
+                    <div class="rodada">
+                        <span id="time1Rodada3"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                        <span id="time3Rodada3"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                    </div>
+
+                    <div class="rodada">
+                        <span id="time2Rodada3"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                        <span id="time4Rodada3"></span>
+                        <input type="number" class="quantity1" name="quantity" min="0" >
+                    </div>
+                    
+                    <button id="closeModal">Fechar</button>
+                    <button id="partida">OK</button>
                 </div>
+
+                
 
             </div>
             
         </div>
+        
     
     </body>
 </html>

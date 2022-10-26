@@ -90,6 +90,7 @@
 /* CSS DO MODAL*/
 
 button{
+
     padding: .6rem 1.2rem;
     background-color: #888;
     color: #fff;
@@ -98,7 +99,7 @@ button{
     cursor: pointer;
     opacity: 0,9;
     font-size: 1rem;
-    transition: 0.4s;
+    
 
 }
 
@@ -132,6 +133,7 @@ button:hover{
     width: 500px;
     max-width: 90%;
     padding: 5px;
+    transform: 0.5s;
 }
 
 .modalHeader{
@@ -146,5 +148,28 @@ button:hover{
 #Modal.hide, #fade.hide{
     z-index: -20;
     opacity: 0;
+    
 
+}
+
+#Moda.hide{
+    top: 0;
+}
+
+
+#grupo1Rodada1{
+    display: inline-block;
+}
+
+.rodada{
+    border: 1px solid black;
+}
+
+.quantity1{
+    width: 30px;
+}
+
+#chaveamentoGrupo1{
+    z-index: -1;
+    opacity: 1;
 }
