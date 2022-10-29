@@ -3,6 +3,7 @@ class CopaDoMundo {
 
     constructor(){
         this.nomes = [];
+        this.pontos = [32];
         this.timesInicial = [];
         this.timesObj = [];
 
@@ -53,6 +54,10 @@ class CopaDoMundo {
 
         $('#closeModal').on('click', function(e){
             copaDoMundo.fecharModal();
+        })
+
+        $('#partida').on('click', function(e){
+            copaDoMundo.preOitavas();
         })
     }
 
@@ -178,12 +183,21 @@ class CopaDoMundo {
                 $(time).html(timeCopa[i]);
             }
         }
-    
-        console.log(this.nomes);
 
-    } 
+    }
+    
+    preOitavas(){
+        let golTime1Rodada1 = $('#golTime1Rodada1').val();
+        let golTime2Rodada1 = $('#golTime2Rodada1').val();
+        
+        if(golTime1Rodada1 > golTime2Rodada1){
+            
+        }
+       
+    }
 
 }
+
 
 
 // Quando terminar de carregar a pagina, inicia a classe

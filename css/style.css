@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body{
+    background-image: radial-gradient(rgba(204, 84, 122), rgba(119, 9, 46), rgba(56, 2, 25));
+}
+
+
 
 /* CSS DA PARTE DO SORTEIO */
 
@@ -20,28 +25,29 @@
 
     display: flex;
     flex-direction: column;
-    width: 130px;
-    height: 165px;
+    width: 139px;
+    height: 175px;
     border: 2px solid black;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-
+    border-radius: 20px;
+    
 }
 
 .equipes{
     width: 115px;
-    height: 27px;
+    height: 32px;
     border: 2px solid black;
+    border-radius: 10px;
 }
 
 /* CSS DA PARTE DO CHAVEAMENTO */
 
 .chaveamento{
     display: flex;
-    border: 2px solid black;
     width: 100%;
-    height: 900px;
+    height: 1000px;
 }
 
 .coluna{
@@ -49,8 +55,7 @@
     width: 100%;
     height: 98%;
     margin: 5px;
-    background-color: aqua;
-    border: 2px solid black;
+    
 }
 
 .lateral1{
@@ -58,8 +63,9 @@
     flex-direction: column;
     width: 130px;
     height: 165px;
-    background-color: yellowgreen;
-    margin-top: 40px;
+    color: black;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .lateral2{
@@ -87,12 +93,14 @@
 }
 
 
+
+
 /* CSS DO MODAL*/
 
 button{
 
-    padding: .6rem 1.2rem;
-    background-color: #888;
+    padding: 10px;
+    opacity: 0.5;
     color: #fff;
     border: none;
     border-radius: .25rem;
@@ -100,11 +108,6 @@ button{
     opacity: 0,9;
     font-size: 1rem;
     
-
-}
-
-#openModal{
-    background-color: #007bff;
 
 }
 
@@ -130,20 +133,12 @@ button:hover{
     transform: translate(-50%, -50%);
     z-index: 10;
     background-color: azure;
-    width: 500px;
+    width: 600px;
     max-width: 90%;
     padding: 5px;
     transform: 0.5s;
 }
 
-.modalHeader{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid white;
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-}
 
 #Modal.hide, #fade.hide{
     z-index: -20;
@@ -157,13 +152,6 @@ button:hover{
 }
 
 
-#grupo1Rodada1{
-    display: inline-block;
-}
-
-.rodada{
-    border: 1px solid black;
-}
 
 .quantity1{
     width: 30px;
@@ -172,4 +160,10 @@ button:hover{
 #chaveamentoGrupo1{
     z-index: -1;
     opacity: 1;
+}
+
+.rodada{
+    display: inline-block;
+    width: 100%;
+    border: 1px solid black;
 }
